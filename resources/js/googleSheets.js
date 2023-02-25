@@ -6,7 +6,7 @@ function setUpGoogleSheets() {
     
     form.addEventListener('submit', e => {
       e.preventDefault()
-      btn.disabled = false
+      btn.disabled = true
       btn.innerHTML = "Sending..."
 
       let fd = getData(false)

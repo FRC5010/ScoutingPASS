@@ -19,7 +19,7 @@ function setUpGoogleSheets() {
               alert('Success!', response) })
         .catch(error => {
               alert('Error!', error.message)})
-
+    
       btn.disabled = false
       btn.innerHTML = "Send to Google Sheets"
     })

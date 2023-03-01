@@ -10,6 +10,7 @@
 		<script src="resources/js/googleSheets.js"></script>
 		<script src="resources/js/scoutingPASS.js"></script>
 		<script src="2023/CU_config.js"></script>
+		<script src="2023/CU_GS_config.js"></script>
 		<link rel="stylesheet" href="resources/css/scoutingPASS.css">
 	</head>
 
@@ -71,31 +72,35 @@
 					<h2 id="qrHeader2">Generate QR Code</h2>
 					<p class="match-label"><input type="button" value="Prev" id="prevButton9" onclick="swipePage(-1)"></p>
 					<p id="qr-info"><span id="display_qr-info" style="border: none; text-align: center;"></span></p>
-					<table id="qr-table"><tr><td width="5%">&nbsp;</td><td width="90%">
-						<div id="qrcode" style="text-align:center">
-							<script>
+					<table id="qr-table">
+						<tr><td width="5%">&nbsp;</td><td width="90%">
+							<div id="qrcode" style="text-align:center">
+								<script>
 						// Create QRCode Object
-								qr = new QRCode(document.getElementById("qrcode"), options)
-					</script>
-					</div>
-				</td><td width="5%">&nbsp;</td></tr>
-				<tr><td width="5%">&nbsp;</td><td width="90%">
-					<div>
-						<p id="data" style="text-align:center"></p>
-					</div>
-				</td><td width="5%">&nbsp;</td></tr>
-			</table>
+									qr = new QRCode(document.getElementById("qrcode"), options)
+								</script>
+							</div>
+						</td><td width="5%">&nbsp;</td></tr>
+						<tr><td width="5%">&nbsp;</td><td width="90%">
+							<div>
+								<p id="data" style="text-align:center"></p>
+							</div>
+						</td><td width="5%">&nbsp;</td></tr>
+					</table>
 					<p></p>
-					<p class="match-label"><input type="button" value="Display Data" id="displayButton" onclick="displayData()"><input type="button" value="Copy Data" id="copyButton" onclick="copyData()"></p>
+					<p class="match-label">
+						<input type="button" value="Display Data" id="displayButton" onclick="displayData()">
+						<input type="button" value="Copy Data" id="copyButton" onclick="copyData()">
+					</p>
 					<div id="submitButton">
-						<button id="submit" type="submit" class="submitForm">Send to Google Sheets</button>
+						<p><button id="submit" type="submit" class="submitForm">Send to Google Sheets</button></p>
 					</div>
 					<div id="clearButton">
-						<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
+						<p><button type="button" class="clearForm" onclick="clearForm()">Clear Form</button></p>
 					</div>
 					<br>
 				</div>
 			</div>
-		</body>
-	</form>
+		</form>
+	<body/>
 </html>

@@ -1,5 +1,5 @@
 function setUpGoogleSheets() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwFs8KJwUyRpgXqJm1fRE7z39gEsXYT_96j_5yzjMrUZ8HYpJHlh2a5KtUn4NZaTG_h/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyTZRfSCiZSTNRFbULup0J-SlXAcyfWCFg-KFl4hb3aJaPxi0CKxHzCtrldHNIMHcGp/exec'
     const form = document.querySelector('#scoutingForm')
     const btn = document.querySelector('#submit')
  
@@ -16,9 +16,9 @@ function setUpGoogleSheets() {
 
       fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: fd })
         .then(response => { 
-              alert('Success!', response) })
+            alert('Success submitting to Google sheet!', response) })
         .catch(error => {
-              alert('Error!', error.message)})
+            alert('Error submitting to Google sheet!', error.message)})
     
       btn.disabled = false
       btn.innerHTML = "Send to Google Sheets"

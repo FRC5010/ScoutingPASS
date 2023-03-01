@@ -128,7 +128,7 @@ There is an extensive set-up process described in following section.  Follow the
 1. Set up the URL
     * In resources/js/googleSheets.js, on line 2, replace <SCRIPT URL> with the URL you just copied from Google Sheets.  It needs to stay wrapped in single quotes.
 2. Enable Google Sheets in Scouting PASS
-    * In your configuraiton file (i.e. 2022/RR_GS_config.js) at the top level add:
+    * In your configuration file (i.e. 2022/RR_GS_config.js) at the top level add:
 
         `"enable_google_sheets": "true",`
     * Best place to add this is just after line 2, like this:

@@ -1,7 +1,7 @@
 var config_data = `
 {
-  "title": "Scouting PASS 2023",
-  "page_title": "Charged Up",
+  "title": "Scouting PASS 2024",
+  "page_title": "Crescendo",
   "pitConfig": "true",
   "prematch": [
     { "name": "Team Number",
@@ -64,16 +64,8 @@ var config_data = `
       "code": "nob",
       "type": "number"
     },
-    { "name": "Floor pickup Cones",
-      "code": "fco",
-      "type": "bool"
-    },
-    { "name": "Floor pickup Cubes",
-      "code": "fcu",
-      "type": "bool"
-    },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
+    { "name": "Floor pickup Notes",
+      "code": "fpu",
       "type": "bool"
     },
     { "name": "Autos",

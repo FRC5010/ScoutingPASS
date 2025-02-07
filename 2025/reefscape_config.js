@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2025",
-  "page_title": "REEFSCAPE",
+  "page_title": "REEFSCAPE 2025",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -86,6 +86,10 @@ var config_data = `
       "code": "ac4",
       "type": "counter"
     },
+	{ "name": "Dislodged Algae",
+      "code": "daA",
+      "type": "bool"
+    },
     { "name": "Auto Scoring Position",
       "code": "asp",
       "type": "clickable_image",
@@ -128,6 +132,10 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
+	{ "name": "Dislodged Algae",
+      "code": "daT",
+      "type": "bool"
+    },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
@@ -145,10 +153,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Barge Timer",
-      "code": "ebt",
-      "type": "timer"
-    },
     { "name": "Final Robot Status",
       "code": "efs",
       "type":"radio",
@@ -223,11 +227,6 @@ var config_data = `
     },
     { "name": "Dropped Algae (>2)",
       "code": "da",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
       "type": "bool"
     },
     { "name": "Comments",

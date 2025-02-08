@@ -22,9 +22,9 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "qual": "Quals<br>",
+        "semi": "Semifinals<br>",
+        "final": "Finals"
       },
       "defaultValue": "qm",
       "required": "true"
@@ -40,12 +40,12 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
+        "red1": "Red-1",
+        "blue1": "Blue-1<br>",
+        "red2": "Red-2",
+        "blue2": "Blue-2<br>",
+        "red3": "Red-3",
+        "blue3": "Blue-3"
       },
       "required":"true"
     },
@@ -140,9 +140,9 @@ var config_data = `
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Coral Station<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
+        "stn": "Coral Station<br>",
+        "flr": "Floor<br>",
+        "bth": "Both<br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
@@ -157,10 +157,10 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "bp": "Parked<br>",
-        "ba": "Parked/Failed Climb<br>",
-        "bs": "Shallow Cage<br>",
-        "bd": "Deep Cage<br>",
+        "park": "Parked<br>",
+        "parkf": "Parked/Failed Climb<br>",
+        "shcg": "Shallow Cage<br>",
+        "dpcg": "Deep Cage<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
@@ -182,9 +182,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
+        "neff": "Not Effective<br>",
+        "avg": "Average<br>",
+        "eff": "Very Effective<br>",
         "x": "Not Observed"
       },
       "defaultValue": "x"
@@ -193,10 +193,10 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "bavg": "Below Average<br>",
+        "avg": "Average<br>",
+        "good": "Good<br>",
+        "exc": "Excellent<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"

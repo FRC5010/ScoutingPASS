@@ -197,7 +197,8 @@ var config_data = `
         "avg": "Average<br>",
         "good": "Good<br>",
         "exc": "Excellent<br>",
-        "x": "Did not play defense"
+        "n": "Did not play defense",
+        "x": "Not Observed"
       },
       "defaultValue": "x"
     },

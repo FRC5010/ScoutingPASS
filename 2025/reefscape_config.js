@@ -139,10 +139,6 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Scored in<br>Opponent<br>Processor",
-      "code": "opp",
-      "type": "bool"
-    }
   ],
   "endgame": [
     { "name": "Barge Timer",
@@ -193,9 +189,10 @@ var config_data = `
         "a": "Average<br>",
         "g": "Good<br>",
         "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "x": "Did not play defense <br>",
+        "n": "Not Observed"
       },
-      "defaultValue": "x"
+      "defaultValue": "n"
     },
     { "name": "Speed Rating",
       "code": "sr",

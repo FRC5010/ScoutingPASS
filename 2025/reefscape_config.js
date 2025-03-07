@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025inmis",
+      "defaultValue": "2025inkok",
       "required": "true"
     },
     { "name": "Match Level",
@@ -86,7 +86,11 @@ var config_data = `
       "code": "ac4",
       "type": "counter"
     },
-	{ "name": "Dislodged Algae",
+    { "name": "Dropped Coral",
+      "code": "adropcoral",
+      "type": "counter"
+    },
+    { "name": "Dislodged Algae",
       "code": "daA",
       "type": "bool"
     },
@@ -124,6 +128,10 @@ var config_data = `
       "code": "tc4",
       "type": "counter"
     },
+    { "name": "Dropped Coral",
+      "code": "tdropcoral",
+      "type": "counter"
+    },
     { "name": "Processor Score",
       "code": "tps",
       "type": "counter"
@@ -132,7 +140,7 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
-	{ "name": "Dislodged Algae",
+    { "name": "Dislodged Algae",
       "code": "daT",
       "type": "bool"
     },
@@ -142,8 +150,7 @@ var config_data = `
       "choices": {
         "stn": "Coral Station<br>",
         "flr": "Floor<br>",
-        "bth": "Both<br>",
-        "x": "Not Attempted"
+        "bth": "Both<br>"
       },
       "defaultValue": "x"
     },
@@ -182,10 +189,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "neff": "Not Effective<br>",
+        "noteff": "Not Effective<br>",
         "avg": "Average<br>",
-        "eff": "Very Effective<br>",
-        "x": "Not Observed"
+        "eff": "Very Effective<br>"
       },
       "defaultValue": "x"
     },
@@ -193,12 +199,11 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "bavg": "Below Average<br>",
+        "belowavg": "Below Average<br>",
         "avg": "Average<br>",
         "good": "Good<br>",
-        "exc": "Excellent<br>",
-        "n": "Did not play defense<br>",
-        "x": "Not Observed"
+        "excel": "Excellent<br>",
+        "noplay": "Did not play defense<br>"
       },
       "defaultValue": "x"
     },
@@ -218,23 +223,19 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
+    { "name": "No Show / Did Not Compete",
+      "code": "noshow",
+      "type": "bool"
+    },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Coral (>2)",
-      "code": "dc",
-      "type": "bool"
-    },
-    { "name": "Dropped Algae (>2)",
-      "code": "da",
       "type": "bool"
     },
     { "name": "Comments",
       "code": "co",
       "type": "text",
-      "size": 15,
-      "maxSize": 55
+      "size": 25,
+      "maxSize": 100
     }
   ]
 }`;

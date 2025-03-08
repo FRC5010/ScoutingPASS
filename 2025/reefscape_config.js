@@ -166,9 +166,9 @@ var config_data = `
       "choices": {
         "park": "Parked<br>",
         "parkf": "Parked/Failed Climb<br>",
-        "shcg": "Shallow Cage<br>",
-        "dpcg": "Deep Cage<br>",
-        "x": "Not attempted"
+        "shallow": "Shallow Cage<br>",
+        "deep": "Deep Cage<br>",
+        "notry": "No Attempt"
       },
       "defaultValue": "x"
     }
